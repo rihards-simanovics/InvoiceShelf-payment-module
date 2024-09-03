@@ -1,6 +1,15 @@
 {
   "name": "crater-invoice/payments",
   "description": "",
+  "authors": [
+    {
+      "name": "Crater Invoice, Inc"
+    },
+    {
+      "name": "Rihards Simanovics",
+      "email": "rihards.s@griffin-web.studio"
+    }
+  ],
   "extra": {
     "laravel": {
       "providers": [],
