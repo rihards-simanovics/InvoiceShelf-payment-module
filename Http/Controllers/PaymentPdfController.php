@@ -2,9 +2,9 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use Crater\Http\Controllers\Controller;
-use Crater\Models\Payment;
-use Crater\Models\Transaction;
+use InvoiceShelf\Http\Controllers\Controller;
+use InvoiceShelf\Models\Payment;
+use InvoiceShelf\Models\Transaction;
 use Illuminate\Http\Request;
 
 class PaymentPdfController extends Controller

@@ -2,9 +2,9 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use Crater\Http\Controllers\Controller;
-use Crater\Models\Company;
-use Crater\Models\PaymentMethod;
+use InvoiceShelf\Http\Controllers\Controller;
+use InvoiceShelf\Models\Company;
+use InvoiceShelf\Models\PaymentMethod;
 use Illuminate\Http\Request;
 use Modules\Payments\Http\Resources\ActivePaymentProviderResource;
 

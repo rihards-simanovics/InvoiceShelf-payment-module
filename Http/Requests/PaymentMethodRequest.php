@@ -2,7 +2,7 @@
 
 namespace Modules\Payments\Http\Requests;
 
-use Crater\Models\PaymentMethod;
+use InvoiceShelf\Models\PaymentMethod;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 

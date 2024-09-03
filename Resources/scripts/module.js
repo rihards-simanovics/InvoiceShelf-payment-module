@@ -7,8 +7,8 @@ import moduleLocales from '../locales/locales'
 
 import '../sass/module.scss'
 
-window.Crater.booting((app, router) => {
-  window.Crater.addMessages(moduleLocales)
+window.InvoiceShelf.booting((app, router) => {
+  window.InvoiceShelf.addMessages(moduleLocales)
 
   router.addRoute('settings', {
     path: 'payment-providers',
@@ -29,5 +29,4 @@ window.Crater.booting((app, router) => {
     name: 'invoice.portal.payment',
     component: InvoicePublicPayment,
   })
-
 })

@@ -3,11 +3,11 @@
 namespace Modules\Payments\Services\Stripe;
 
 use Carbon\Carbon;
-use Crater\Models\Company;
-use Crater\Models\Currency;
-use Crater\Models\Payment;
-use Crater\Models\PaymentMethod;
-use Crater\Models\Transaction;
+use InvoiceShelf\Models\Company;
+use InvoiceShelf\Models\Currency;
+use InvoiceShelf\Models\Payment;
+use InvoiceShelf\Models\PaymentMethod;
+use InvoiceShelf\Models\Transaction;
 use Illuminate\Support\Facades\Http;
 use Modules\Payments\Services\PaymentInterface;
 

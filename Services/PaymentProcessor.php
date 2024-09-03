@@ -2,7 +2,7 @@
 
 namespace Modules\Payments\Services;
 
-use Crater\Models\PaymentMethod;
+use InvoiceShelf\Models\PaymentMethod;
 use Modules\Payments\Services\Paypal\PaymentProvider;
 use Modules\Payments\Services\Razorpay\PaymentProvider as RazorpayPaymentProvider;
 use Modules\Payments\Services\Stripe\PaymentProvider as StripePaymentProvider;

@@ -75,7 +75,7 @@
         class="flex items-center justify-center mt-6 text-gray-500 font-normal"
       >
         Powered by
-        <a href="https://craterapp.com" target="_blank">
+        <a href="https://invoiceshelf.com/" target="_blank">
           <img :src="getLogo()" class="h-4 ml-1 mb-1" />
         </a>
       </div>
@@ -91,7 +91,7 @@ import { usePaymentProviderStore } from '~/scripts/stores/payment-provider'
 const { useRoute, useRouter } = window.VueRouter
 
 import InvoiceInformationCard from '@/scripts/components/InvoiceInformationCard.vue'
-import CraterLogo from '@/static/img/crater-logo-gray.png'
+import InvoiceShelfLogo from '@/static/img/logo-gray.png'
 
 import RazorPay from '~/scripts/components/RazorPay.vue'
 import StripePay from '~/scripts/components/StripePayment.vue'
@@ -178,7 +178,7 @@ const paymentCardTitle = computed(() => {
 })
 
 function getLogo() {
-  return CraterLogo
+  return InvoiceShelfLogo
 }
 
 const customerLogo = computed(() => {

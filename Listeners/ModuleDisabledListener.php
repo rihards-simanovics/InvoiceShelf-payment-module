@@ -2,8 +2,8 @@
 
 namespace Modules\Payments\Listeners;
 
-use Crater\Events\ModuleDisabledEvent;
-use Crater\Models\PaymentMethod;
+use InvoiceShelf\Events\ModuleDisabledEvent;
+use InvoiceShelf\Models\PaymentMethod;
 
 class ModuleDisabledListener
 {

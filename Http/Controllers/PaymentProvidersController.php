@@ -2,8 +2,8 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use Crater\Http\Controllers\Controller;
-use Crater\Models\PaymentMethod;
+use InvoiceShelf\Http\Controllers\Controller;
+use InvoiceShelf\Models\PaymentMethod;
 use Illuminate\Http\Request;
 use Modules\Payments\Http\Requests\PaymentMethodRequest;
 use Modules\Payments\Http\Resources\PaymentProviderResource;
@@ -58,7 +58,7 @@ class PaymentProvidersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \Crater\Models\PaymentMethod  $paymentMethod
+     * @param  \InvoiceShelf\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Http\Response
      */
     public function show(PaymentMethod $paymentProvider)
@@ -72,7 +72,7 @@ class PaymentProvidersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Crater\Models\PaymentMethod  $paymentMethod
+     * @param  \InvoiceShelf\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Http\Response
      */
     public function update(PaymentMethodRequest $request, PaymentMethod $paymentProvider)
@@ -94,7 +94,7 @@ class PaymentProvidersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Crater\Models\PaymentMethod  $paymentMethod
+     * @param  \InvoiceShelf\Models\PaymentMethod  $paymentMethod
      * @return \Illuminate\Http\Response
      */
     public function destroy(PaymentMethod $paymentProvider)

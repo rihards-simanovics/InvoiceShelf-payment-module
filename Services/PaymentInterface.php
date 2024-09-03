@@ -2,7 +2,7 @@
 
 namespace Modules\Payments\Services;
 
-use Crater\Models\Company;
+use InvoiceShelf\Models\Company;
 
 interface PaymentInterface
 {

@@ -2,7 +2,7 @@
 
 namespace Modules\Payments\Http\Resources;
 
-use Crater\Http\Resources\CompanyResource;
+use InvoiceShelf\Http\Resources\CompanyResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PaymentProviderResource extends JsonResource

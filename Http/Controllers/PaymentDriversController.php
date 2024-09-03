@@ -2,7 +2,7 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use Crater\Http\Controllers\Controller;
+use InvoiceShelf\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PaymentDriversController extends Controller
