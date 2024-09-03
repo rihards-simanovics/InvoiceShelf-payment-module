@@ -1,0 +1,20 @@
+{
+  "name": "crater-invoice/payments",
+  "description": "",
+  "extra": {
+    "laravel": {
+      "providers": [],
+      "aliases": {}
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Payments\\": ""
+    }
+  },
+  "require": {
+    "stripe/stripe-php": "^7.103",
+    "paypal/paypal-checkout-sdk": "^1.0",
+    "razorpay/razorpay": "^2.8"
+  }
+}

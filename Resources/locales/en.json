@@ -1,0 +1,38 @@
+{
+  "payment_providers": {
+    "add_payment_provider": "Add Payment Provider",
+    "payment_providers": "Payment Providers",
+    "description": "You can configure your payment providers to accept payments using drivers such as Stripe, Razorpay, etc.",
+    "name": "Name",
+    "type": "Type",
+    "key": "Key",
+    "secret_key": "Secret Key",
+    "driver": "Driver",
+    "active": "Active",
+    "use_test_env":"Use Test Environment ?",
+    "edit_payment_provider": "Edit Payment Provider",
+    "provider_delete_message": "Payment Provider deleted successfully ",
+    "provider_updated_message": "Payment Provider updated successfully",
+    "provider_add_message": "Payment Provider added successfully",
+    "provider_name_help_text": "Type a name that helps identify the payment method for customers.",
+    "provider_name_placeholder": "Crater Invoice (Stripe), XYZ Company Paypal, etc",
+    "provider_name_tooltip": "The name will be displayed on the payment page when you have configured more than 1 active providers.",
+    "error": "Payment Provider already in use",
+    "stripe": "Stripe",
+    "paypal": "Paypal",
+    "razorpay": "Razorpay",
+    "select_payment_method": "Select a Payment Method",
+    "enter_payment_details": "Enter Payment Details",
+    "pay_with_razorpay": "Pay {amount} with Razorpay",
+    "invalid_credentials": "Invalid API Key provided",
+    "payment_status": "Payment Status",
+    "payment_successful": "Payment Successful",
+    "payment_error": "Payment Error",
+    "already_in_use": "Payment Provider already in use",
+    "payment_successful_description": "Click on the link below to view or download the paid invoice."
+  },
+  "general": {
+    "view_invoice": "View Invoice",
+    "view_payment_receipt": "View Payment Receipt"
+  }
+}
