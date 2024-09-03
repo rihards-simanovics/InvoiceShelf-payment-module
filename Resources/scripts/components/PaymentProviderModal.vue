@@ -20,7 +20,7 @@
       <div class="px-4 md:px-8 py-8 overflow-y-auto sm:p-6">
         <BaseInputGrid layout="one-column">
           <BaseInputGroup
-            :label="$tc('payment_providers.name')"
+            :label="$t('payment_providers.name')"
             :error="v$.name.$error && v$.name.$errors[0].$message"
             required
             :tooltip="$t('payment_providers.provider_name_tooltip')"
@@ -36,7 +36,7 @@
             />
           </BaseInputGroup>
           <BaseInputGroup
-            :label="$tc('payment_providers.driver')"
+            :label="$t('payment_providers.driver')"
             :error="v$.driver.$error && v$.driver.$errors[0].$message"
             required
           >

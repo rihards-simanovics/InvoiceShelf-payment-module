@@ -46,7 +46,7 @@
               paymentProviderStore.activeProviders.length > 1 &&
               !isProviderDisabled
             "
-            :label="$tc('payment_providers.select_payment_method')"
+            :label="$t('payment_providers.select_payment_method')"
             required
             class="mb-6 relative z-20"
           >
