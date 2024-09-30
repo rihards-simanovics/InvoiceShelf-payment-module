@@ -2,8 +2,13 @@
 
 namespace Modules\Payments\Http\Resources;
 
-use InvoiceShelf\Http\Resources\CompanyResource;
+use App\Http\Resources\CompanyResource;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Http\Resources\CompanyResource', 'App\Http\Resources\CompanyResource');
+}
 
 class PaymentProviderResource extends JsonResource
 {

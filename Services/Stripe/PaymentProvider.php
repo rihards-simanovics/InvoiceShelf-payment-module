@@ -3,13 +3,22 @@
 namespace Modules\Payments\Services\Stripe;
 
 use Carbon\Carbon;
-use InvoiceShelf\Models\Company;
-use InvoiceShelf\Models\Currency;
-use InvoiceShelf\Models\Payment;
-use InvoiceShelf\Models\PaymentMethod;
-use InvoiceShelf\Models\Transaction;
+use App\Models\Company;
+use App\Models\Currency;
+use App\Models\Payment;
+use App\Models\PaymentMethod;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Http;
 use Modules\Payments\Services\PaymentInterface;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Models\Company', 'App\Models\Company');
+    VersionHelper::aliasClass('InvoiceShelf\Models\Currency', 'App\Models\Currency');
+    VersionHelper::aliasClass('InvoiceShelf\Models\Payment', 'App\Models\Payment');
+    VersionHelper::aliasClass('InvoiceShelf\Models\PaymentMethod', 'App\Models\PaymentMethod');
+    VersionHelper::aliasClass('InvoiceShelf\Models\Transaction', 'App\Models\Transaction');
+}
 
 class PaymentProvider implements PaymentInterface
 {

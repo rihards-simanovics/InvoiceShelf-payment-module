@@ -2,12 +2,18 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use InvoiceShelf\Http\Controllers\Controller;
-use InvoiceShelf\Models\PaymentMethod;
+use App\Http\Controllers\Controller;
+use App\Models\PaymentMethod;
 use Illuminate\Http\Request;
 use Modules\Payments\Http\Requests\PaymentMethodRequest;
 use Modules\Payments\Http\Resources\PaymentProviderResource;
 use Modules\Payments\Traits\AuthorizationTrait;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Http\Controllers\Controller', 'App\Http\Controllers\Controller');
+    VersionHelper::aliasClass('InvoiceShelf\Models\PaymentMethod', 'App\Models\PaymentMethod');
+}
 
 class PaymentProvidersController extends Controller
 {

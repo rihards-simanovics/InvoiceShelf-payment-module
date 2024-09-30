@@ -2,8 +2,13 @@
 
 namespace Modules\Payments\Listeners;
 
-use InvoiceShelf\Events\ModuleDisabledEvent;
-use InvoiceShelf\Models\PaymentMethod;
+use App\Events\ModuleDisabledEvent;
+use App\Models\PaymentMethod;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Models\PaymentMethod', 'App\Models\PaymentMethod');
+}
 
 class ModuleDisabledListener
 {

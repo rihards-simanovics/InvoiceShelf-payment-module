@@ -2,8 +2,13 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use InvoiceShelf\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Http\Controllers\Controller', 'App\Http\Controllers\Controller');
+}
 
 class PaymentDriversController extends Controller
 {

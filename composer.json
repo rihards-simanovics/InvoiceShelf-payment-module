@@ -18,7 +18,9 @@
   },
   "autoload": {
     "psr-4": {
-      "Modules\\Payments\\": ""
+      "Modules\\Payments\\": "",
+      "App\\": "app/",
+      "InvoiceShelf\\": "app/"
     }
   },
   "require": {

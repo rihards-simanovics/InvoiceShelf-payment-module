@@ -2,10 +2,15 @@
 
 namespace Modules\Payments\Services;
 
-use InvoiceShelf\Models\PaymentMethod;
+use App\Models\PaymentMethod;
 use Modules\Payments\Services\Paypal\PaymentProvider;
 use Modules\Payments\Services\Razorpay\PaymentProvider as RazorpayPaymentProvider;
 use Modules\Payments\Services\Stripe\PaymentProvider as StripePaymentProvider;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Models\PaymentMethod', 'App\Models\PaymentMethod');
+}
 
 class PaymentProcessor
 {

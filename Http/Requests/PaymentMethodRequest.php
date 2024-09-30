@@ -2,9 +2,14 @@
 
 namespace Modules\Payments\Http\Requests;
 
-use InvoiceShelf\Models\PaymentMethod;
+use App\Models\PaymentMethod;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Models\PaymentMethod', 'App\Models\PaymentMethod');
+}
 
 class PaymentMethodRequest extends FormRequest
 {

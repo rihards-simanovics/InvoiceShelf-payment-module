@@ -2,7 +2,12 @@
 
 namespace Modules\Payments\Services;
 
-use InvoiceShelf\Models\Company;
+use App\Models\Company;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Models\Company', 'App\Models\Company');
+}
 
 interface PaymentInterface
 {

@@ -2,10 +2,17 @@
 
 namespace Modules\Payments\Http\Controllers;
 
-use InvoiceShelf\Http\Controllers\Controller;
-use InvoiceShelf\Models\Payment;
-use InvoiceShelf\Models\Transaction;
+use App\Http\Controllers\Controller;
+use App\Models\Payment;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
+use Modules\Payments\Helpers\VersionHelper;
+
+if (VersionHelper::checkAppVersion('<', '2.0.0')) {
+    VersionHelper::aliasClass('InvoiceShelf\Http\Controllers\Controller', 'App\Http\Controllers\Controller');
+    VersionHelper::aliasClass('InvoiceShelf\Models\Payment', 'App\Models\Payment');
+    VersionHelper::aliasClass('InvoiceShelf\Models\Transaction', 'App\Models\Transaction');
+}
 
 class PaymentPdfController extends Controller
 {
