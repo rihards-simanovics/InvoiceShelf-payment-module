@@ -7,7 +7,11 @@ Adds ability to process Payments using your InvoiceShelf instance.
 ## Table of Contents
 
 - [Installation](#installation)
+- [Update](#update)
+  - [Hard Stops](#hard-stops)
 - [Development](#development)
+  - [Prerequisites](#prerequisites)
+  - [Steps](#steps)
 - [Troubleshooting](#troubleshooting)
 - [Copyright](#copyright)
 
@@ -17,8 +21,19 @@ Adds ability to process Payments using your InvoiceShelf instance.
 2. Create `/Modules/` dir in your server InvoiceShelf project root. **NOTE:** make sure it's capitalised like in example, it's not a typo.
 3. Upload the `Payments.zip` into the newly created `/Modules/` dir.
 4. Unzip it.
-5. In your server InvoiceShelf project `/` root dir, run `php artisan install:module Payments 1.0.0`.
+5. In your server InvoiceShelf project `/` root dir, run `php artisan install:module Payments 1.1.0`.
 6. (optional) If you have any issues with your installed module, try clearing your browser's `cache`, `cookies`, and/or `site data`.
+
+## Update
+
+1. Download the zip with pre-built module from the latest release in this repo. Alternatively you can build from source, for that follow the steps in the [development](#development) section.
+2. Upload the `WhiteLabel.zip` into the newly created `/Modules/` dir.
+3. Remove old `WhiteLabel/` module folder.
+4. Unzip it and visit the site.
+
+### Hard Stops
+
+- InvoiceShelf >= 1.3.0 (upgrade this module to 1.1.0)
 
 ## Development
 
