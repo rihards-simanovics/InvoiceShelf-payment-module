@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/rihards-simanovics/InvoiceShelf-payment-module/compare/v1.0.0...v1.1.0) (2024-09-30)
+
+
+### Features
+
+* update namespace to App\ and add backwards compatibility ([3e82b8d](https://github.com/rihards-simanovics/InvoiceShelf-payment-module/commits/3e82b8d40c42101bc101635a51ce2f3fdfd9bea3))
+
+
+### Documentation
+
+* add browser data clearing step ([cc2c14c](https://github.com/rihards-simanovics/InvoiceShelf-payment-module/commits/cc2c14ce0f161c41cfb412eff2629c63f2a83eac))
+
+
+### Chores
+
+* add SECURITY.md ([909a536](https://github.com/rihards-simanovics/InvoiceShelf-payment-module/commits/909a53610dd27ab30fdf9256cc2f33a191709853))
+* update README.md ([0f4a78c](https://github.com/rihards-simanovics/InvoiceShelf-payment-module/commits/0f4a78c69580c724b0e45b338938d0a405ec7f87))
+
 ## 1.0.0 (2024-09-03)
 
 
