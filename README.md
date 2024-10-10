@@ -1,3 +1,7 @@
+# 📦 Public Archive: Repo migrated under official Invoice Shelf Namespace
+This repo has been migrated under the official InvoiceShlf namespace
+For further updates please go to: https://github.com/InvoiceShelf/module-payments
+
 # Invoice Shelf - Payments Module
 
 Adds ability to process Payments using your InvoiceShelf instance.
